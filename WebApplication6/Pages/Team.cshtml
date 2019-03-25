@@ -1,0 +1,39 @@
+﻿@page
+@model WebApplication6.Pages.TeamModel
+@{
+    ViewData["Title"] = "Team";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="container">
+    <img src="~/Teamfoto.jpg" class="img-fluid" />
+    <div class="text-justify">
+        <p>Het team bestaat uit de volgende leden:</p>
+        <div class="row">
+            @{ int i = 0;}
+            @foreach (var teamMember in Model.TeamMembers)
+            {
+                @*if (i % 2 == 0)
+                    {
+                        @:<div class="row">
+                        }*@
+                @:<div class="col-sm-12 col-lg-6">
+                    <img class="img-thumbnail" src="@teamMember.ImgSrc" />
+                    <p><b>Naam:</b> @Html.DisplayFor(item => teamMember.Name)</p>
+                    <p><b>Leeftijd:</b> @Html.DisplayFor(item => teamMember.Age)</p>
+                    <p><b>Mijn vrije tijd besteed ik aan:</b> @Html.DisplayFor(item => teamMember.SpareTime)</p>
+                    <p><b>Mooiste hardloopervaring: </b> @Html.DisplayFor(item => teamMember.GreatestExperience)</p>
+                    <p><b>Motivatie voor de Maaslandloop:  </b> @Html.DisplayFor(item => teamMember.Motivation)</p>
+
+
+                @:</div>
+                @*if (i % 2 == 0)
+                        {
+                        @:</div>
+                    }*@
+                i++;
+            }
+        </div>
+    </div>
+</div>
+
