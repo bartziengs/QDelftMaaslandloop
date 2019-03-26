@@ -12994,11 +12994,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BZI\\Documents\\Visual Studio 2017\\Projects\\WebApplication6\\WebApplication6\\WebApplication6.csproj",
+      "projectUniqueName": "C:\\Users\\BZI\\Documents\\Visual Studio 2017\\Projects\\QDelftMaaslandloop\\WebApplication6\\WebApplication6.csproj",
       "projectName": "WebApplication6",
-      "projectPath": "C:\\Users\\BZI\\Documents\\Visual Studio 2017\\Projects\\WebApplication6\\WebApplication6\\WebApplication6.csproj",
+      "projectPath": "C:\\Users\\BZI\\Documents\\Visual Studio 2017\\Projects\\QDelftMaaslandloop\\WebApplication6\\WebApplication6.csproj",
       "packagesPath": "C:\\Users\\BZI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BZI\\Documents\\Visual Studio 2017\\Projects\\WebApplication6\\WebApplication6\\obj\\",
+      "outputPath": "C:\\Users\\BZI\\Documents\\Visual Studio 2017\\Projects\\QDelftMaaslandloop\\WebApplication6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

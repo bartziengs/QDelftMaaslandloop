@@ -2,16 +2,20 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip({ trigger: 'manual' }).tooltip('show');
+$(document).ready(function () {
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
 });
-
-// $( window ).scroll(function() {   
-// if($( window ).scrollTop() > 10){  // scroll down abit and get the action   
-$(".progress-bar").each(function () {
-    each_bar_width = $(this).attr('aria-valuenow');
-    $(this).width(each_bar_width + '%');
-});
-
- //  }  
-// });

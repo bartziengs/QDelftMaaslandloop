@@ -106,3 +106,9 @@ section {
 .text-index {
     font-size: 2rem !important;
 }
+
+.table-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
