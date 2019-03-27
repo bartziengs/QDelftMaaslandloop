@@ -7,33 +7,53 @@
 <h1>@ViewData["Title"]</h1>
 <div class="container">
     <img src="~/Teamfoto.jpg" class="img-fluid" />
-    <div class="text-justify">
-        <p>Het team bestaat uit de volgende leden:</p>
-        <div class="row">
-            @{ int i = 0;}
-            @foreach (var teamMember in Model.TeamMembers)
-            {
-                @*if (i % 2 == 0)
-                    {
-                        @:<div class="row">
-                        }*@
-                @:<div class="col-sm-12 col-lg-6">
-                    <img class="img-thumbnail" src="@teamMember.ImgSrc" />
-                    <p><b>Naam:</b> @Html.DisplayFor(item => teamMember.Name)</p>
-                    <p><b>Leeftijd:</b> @Html.DisplayFor(item => teamMember.Age)</p>
-                    <p><b>Mijn vrije tijd besteed ik aan:</b> @Html.DisplayFor(item => teamMember.SpareTime)</p>
-                    <p><b>Mooiste hardloopervaring: </b> @Html.DisplayFor(item => teamMember.GreatestExperience)</p>
-                    <p><b>Motivatie voor de Maaslandloop:  </b> @Html.DisplayFor(item => teamMember.Motivation)</p>
+    <p>Het team bestaat uit de volgende leden:</p>
+    <!--Accordion wrapper-->
+    <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+        @{var i = 0; }
+        @foreach (var teamMember in Model.TeamMembers)
+        {
+            <!-- Accordion card -->
+            <div class="card">
 
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingTwo1">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href=@($"#Teamlid{i}")
+                       aria-expanded="false" aria-controls="collapseTwo1">
+                        <h5 class="mb-0 namen-text">
+                            @Html.DisplayFor(item => teamMember.Name) <i class="fas fa-angle-down rotate-icon float-right"></i>
+                        </h5>
+                    </a>
+                </div>
 
-                @:</div>
-                @*if (i % 2 == 0)
-                        {
-                        @:</div>
-                    }*@
-                i++;
-            }
-        </div>
+                <!-- Card body -->
+                <div id=@($"Teamlid{i}") class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordionEx1">
+                    <div class="card-body">
+                        <img class="img-thumbnail mx-auto d-block actiefoto" src="@teamMember.ImgSrc" />
+                        <p><b>Naam:</b> @Html.DisplayFor(item => teamMember.Name)</p>
+                        <p><b>Leeftijd:</b> @Html.DisplayFor(item => teamMember.Age)</p>
+                        <p><b>Mijn vrije tijd besteed ik aan:</b> @Html.DisplayFor(item => teamMember.SpareTime)</p>
+                        <p><b>Mooiste hardloopervaring: </b> @Html.DisplayFor(item => teamMember.GreatestExperience)</p>
+                        <p><b>Motivatie voor de Maaslandloop:  </b> @Html.DisplayFor(item => teamMember.Motivation)</p>
+                    </div>
+                </div>
+
+            </div>
+            i++;
+            <!-- Accordion card -->
+
+        }
+        <!-- Accordion wrapper -->
     </div>
+    @*<div class="col-sm-12 col-lg-6">
+                <img class="img-thumbnail" src="@teamMember.ImgSrc" />
+                <p><b>Naam:</b> @Html.DisplayFor(item => teamMember.Name)</p>
+                <p><b>Leeftijd:</b> @Html.DisplayFor(item => teamMember.Age)</p>
+                <p><b>Mijn vrije tijd besteed ik aan:</b> @Html.DisplayFor(item => teamMember.SpareTime)</p>
+                <p><b>Mooiste hardloopervaring: </b> @Html.DisplayFor(item => teamMember.GreatestExperience)</p>
+                <p><b>Motivatie voor de Maaslandloop:  </b> @Html.DisplayFor(item => teamMember.Motivation)</p>
+
+
+        </div>*@
 </div>
 

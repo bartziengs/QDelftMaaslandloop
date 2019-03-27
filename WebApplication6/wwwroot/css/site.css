@@ -112,3 +112,19 @@ section {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.namen-text {
+    color: #8dc63f;
+}
+
+.card-header {
+    background-color: #fff !important;
+}
+
+.card-header a:hover {
+    color: #4e672b;
+}
+
+.actiefoto {
+    max-height: 350px;
+}
