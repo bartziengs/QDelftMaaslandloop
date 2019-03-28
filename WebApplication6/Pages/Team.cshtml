@@ -4,10 +4,14 @@
     ViewData["Title"] = "Team";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1 class="display-4 text-center text-index">@ViewData["Title"]</h1>
 <div class="container">
-    <img src="~/Teamfoto.jpg" class="img-fluid" />
-    <p>Het team bestaat uit de volgende leden:</p>
+    <img src="~/Teamfoto.jpg" class="img-fluid rounded" />
+    <p><b>Bovenste rij v.l.r:</b>Tessa van de Krol, Pieter Loof, Sjoerd Mansschot, Arnaut de Rijk, Jos van Aalderen, Gawein Laugenslager, Martijn Bergkamp</p>
+    <p><b>Onderste rij v.l.r:</b>Peggy Kemperman, Raymond Verhoef, Alex van der Meijs, Bart Ziengs, Azad Imamoglu</p>
+
+    <h2 class="display-4 text-center text-index">Uitgelichte Atleten:</h2>
+
     <!--Accordion wrapper-->
     <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
         @{var i = 0; }
@@ -45,15 +49,5 @@
         }
         <!-- Accordion wrapper -->
     </div>
-    @*<div class="col-sm-12 col-lg-6">
-                <img class="img-thumbnail" src="@teamMember.ImgSrc" />
-                <p><b>Naam:</b> @Html.DisplayFor(item => teamMember.Name)</p>
-                <p><b>Leeftijd:</b> @Html.DisplayFor(item => teamMember.Age)</p>
-                <p><b>Mijn vrije tijd besteed ik aan:</b> @Html.DisplayFor(item => teamMember.SpareTime)</p>
-                <p><b>Mooiste hardloopervaring: </b> @Html.DisplayFor(item => teamMember.GreatestExperience)</p>
-                <p><b>Motivatie voor de Maaslandloop:  </b> @Html.DisplayFor(item => teamMember.Motivation)</p>
-
-
-        </div>*@
 </div>
 
