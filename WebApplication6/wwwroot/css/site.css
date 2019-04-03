@@ -128,3 +128,13 @@ section {
 .actiefoto {
     max-height: 350px;
 }
+
+@media (max-width: 1200px ) {
+   .tweede{
+       margin-top:20px;
+   }
+}
+
+h2{
+    margin-top:10px;
+}

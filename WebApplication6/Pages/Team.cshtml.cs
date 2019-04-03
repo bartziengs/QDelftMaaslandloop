@@ -41,6 +41,16 @@ namespace WebApplication6.Pages
                 Motivation = "Motivatie voor deze loop heb ik eigenlijk niet nodig. Het lopen met collega’s en voor het goede doel voor kinderen maakt meedoen nog makkelijker. ",
                 ImgSrc = "/img/team/piet.png",
             }
+            ,
+            new TeamMember
+            {
+                Name = "Patricia van Luijk",
+                Age = 36,
+                SpareTime = "Hardlopen! Ik train 2x per week bij mijn hardloopclub in Delft (DIJC Bertus). Verder zit ik graag op de (wielren)fiets, of doe ik het rustiger aan en ga ik wandelen. Als ik maar naar buiten kan! En daarna appeltaart eten :-)",
+                GreatestExperience = "Mijn aller eerste wedstrijdje: 5km in de ronde van kwintsheul, nu bijna 4 jaar geleden. Ik had daarvoor nooit gedacht dat ik zó ver kon hardlopen ;-) Mijn vrienden stonden langs de kant (hard!) te juichen en bij de finish stonden mijn ouders klaar met bloemen. Inmiddels draai ik mijn hand niet meer om voor 5km, maar ik vergeet nooit hoe die afstand voelt als beginner.",
+                Motivation = "Het lijkt mij een waanzinnige ervaring om met een team door half Nederland te rennen! Hardlopen maakt mij blij, en het delen van zo'n ervaring met andere loopliefhebbers maakt het nog leuker. En dat je daarmee ook het goede doel kan steunen is natuurlijk fantastisch. Ik kijk er enorm naar uit!",
+                ImgSrc = "/img/team/patricia.jpg",
+            }
             });
         }
     }
