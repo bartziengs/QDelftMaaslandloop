@@ -1,0 +1,38 @@
+﻿@page
+@model WebApplication6.Pages.ReactieModel
+
+<h4>GuestbookEntry</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GuestbookEntry.Name" class="control-label"></label>
+                <input asp-for="GuestbookEntry.Name" class="form-control" />
+                <span asp-validation-for="GuestbookEntry.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GuestbookEntry.DatePosted" class="control-label"></label>
+                <input asp-for="GuestbookEntry.DatePosted" class="form-control" />
+                <span asp-validation-for="GuestbookEntry.DatePosted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GuestbookEntry.Message" class="control-label"></label>
+                <input asp-for="GuestbookEntry.Message" class="form-control" />
+                <span asp-validation-for="GuestbookEntry.Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Gastenboek">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,50 @@
+﻿@page
+@model WebApplication6.Pages.GastenboekModel
+
+@{
+    ViewData["Title"] = "Gastenboek";
+}
+
+<h1 class="display-4 text-center text-index">@ViewData["Title"]</h1>
+
+<p>
+    <a class="reactielink" asp-page="Reactie"><i class="fa fa-plus" style="margin:0 10px;"></i>Wens het team van Qdelft succes door zelf een reactie achter te laten!</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GuestbookEntry[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuestbookEntry[0].DatePosted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuestbookEntry[0].Message)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.GuestbookEntry)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DatePosted)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Message)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

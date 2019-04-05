@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using WebApplication6.Models;
 
 namespace WebApplication6
 {
@@ -32,6 +34,9 @@ namespace WebApplication6
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDbContext<GuestbookContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("GuestbookContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
