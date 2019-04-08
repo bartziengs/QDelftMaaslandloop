@@ -50,6 +50,15 @@ namespace WebApplication6.Pages
                 GreatestExperience = "Mijn aller eerste wedstrijdje: 5km in de ronde van kwintsheul, nu bijna 4 jaar geleden. Ik had daarvoor nooit gedacht dat ik zó ver kon hardlopen ;-) Mijn vrienden stonden langs de kant (hard!) te juichen en bij de finish stonden mijn ouders klaar met bloemen. Inmiddels draai ik mijn hand niet meer om voor 5km, maar ik vergeet nooit hoe die afstand voelt als beginner.",
                 Motivation = "Het lijkt mij een waanzinnige ervaring om met een team door half Nederland te rennen! Hardlopen maakt mij blij, en het delen van zo'n ervaring met andere loopliefhebbers maakt het nog leuker. En dat je daarmee ook het goede doel kan steunen is natuurlijk fantastisch. Ik kijk er enorm naar uit!",
                 ImgSrc = "/img/team/patricia.jpg",
+            },
+            new TeamMember
+            {
+                Name = "Jos van Aalderen",
+                Age = 50,
+                SpareTime = "Hardlopen, klussen in huis en langs het voetbalveld staan om mijn zoon aan te moedigen, afgewisseld met lekker eten en drinken. Ik doe af en toe mee met georganiseerde (lokale) wedstrijdjes (tussen de 10 en 21 km) en liep vorig jaar mijn eerste marathon.",
+                GreatestExperience = "De Leiden marathon 2018, het was toen snikheet en ik weet nu pas echt wat kramp is. Toch is het mijn mooiste hardloopervaring, want ik heb 'm uitgelopen. Ik ga 'm zeker nog een keer lopen, maar dan (hopelijk) zonder kramp.",
+                Motivation = "Die zit 'm in om samen met collega's deze superlange estafette te lopen. Verreweg de meesten van ons zijn nog nooit zo'n uitdaging aangegaan en het lijkt me te gek om dit samen te volbrengen. En we steunen daarmee een heel goed doel, wat het helemaal mooi maakt!",
+                ImgSrc = "/img/team/jos.jpg",
             }
             });
         }
