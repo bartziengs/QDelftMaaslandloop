@@ -1,9 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebApplication6.Pages
 {
@@ -59,6 +55,16 @@ namespace WebApplication6.Pages
                 GreatestExperience = "De Leiden marathon 2018, het was toen snikheet en ik weet nu pas echt wat kramp is. Toch is het mijn mooiste hardloopervaring, want ik heb 'm uitgelopen. Ik ga 'm zeker nog een keer lopen, maar dan (hopelijk) zonder kramp.",
                 Motivation = "Die zit 'm in om samen met collega's deze superlange estafette te lopen. Verreweg de meesten van ons zijn nog nooit zo'n uitdaging aangegaan en het lijkt me te gek om dit samen te volbrengen. En we steunen daarmee een heel goed doel, wat het helemaal mooi maakt!",
                 ImgSrc = "/img/team/jos.jpg",
+            }
+            ,
+            new TeamMember
+            {
+                Name = "Bart Ziengs",
+                Age = 27,
+                SpareTime = "Voetbal, Sport, Chillings",
+                GreatestExperience = " \"Haha goede vraag, de Leiden halve marathon 2019, voor het eerst een halve marathon lopen (^foto voor bewijs). Oja trouwens, de afgelopen golden ten was ook wel nice, wilde dus graag onder de 45 minuten lopen en dat is gelukt. Laatste kilometer met de tong op de schoenen en drie hartaanvallen bij de finish maarja dat zie je niet aan de uitslag. Lekker man! \"",
+                Motivation = "Beetje bewegen is wel goed voor ons toch, ouwehoeren bij Azad in het busje kijk ik ook wel naar uit",
+                ImgSrc = "/img/team/bart.jpeg",
             }
             });
         }
